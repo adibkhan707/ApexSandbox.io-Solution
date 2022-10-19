@@ -1,0 +1,19 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+    if(plant1.equals('onions')){
+        return (plant2.equals('carrots')|| plant2.equals('lettuce')|| plant2.equals('tomatoes'))?true:false;
+    }
+    if(plant1.equals('lettuce')){
+        return (plant2.equals('cucumbers')|| plant2.equals('onions'))?true:false;
+    }
+    if(plant1.equals('cucumbers')){
+        return plant2.equals('lettuce')?true:false;
+    }
+    if(plant1.equals('carrots')){
+        return (plant2.equals('onions'))?true:false;
+    }
+    if(plant1.equals('tomatoes')){
+        return (plant2.equals('onions'))?true:false;
+    }
+    else return false;
+}
